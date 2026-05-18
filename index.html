@@ -229,7 +229,7 @@
       font-family: 'Syne', sans-serif;
       font-size: 1rem;
       font-weight: 700;
-      color: #fff;
+      color: #000;
     }
 
     .project-card p {
@@ -282,7 +282,7 @@
       <div class="eyebrow">Portfolio</div>
       <h1>Auska Wang</h1>
       <p class="subtitle">
-        <span>Quality Intern @ DENSO</span> &nbsp;·&nbsp; Computer Engineering @ Georgia Tech
+        <span>Embedded Firmware Intern @ Lutron</span> &nbsp;·&nbsp; Computer Engineering @ Georgia Tech
       </p>
     </div>
   </header>
@@ -291,11 +291,7 @@
     <div class="section-label">01 / About</div>
     <h2>About Me</h2>
     <p>
-      I'm studying Computer Engineering at Georgia Institute of Technology with an expected graduation date of December 2026.
-      Programming an Arduino to blink an LED I wired back in 2024 encouraged me to pursue computer engineering — I enjoyed the
-      tangibility of seeing what I created with code appear right before me. I enjoy learning and experimenting with all sorts
-      of peripherals with microcontrollers to create impactful applications. As a junior, I'm actively seeking co-ops and
-      internships to learn more about what it means to be an embedded software engineer. I look forward to expanding my knowledge!
+      I am a Computer Engineering student at Georgia Tech (Dec 2026) with a deep focus on bare-metal programming and high-integrity firmware architecture. I am passionate about writing defensive, rigorously validated code to ensure absolute determinism. I am actively seeking full-time embedded systems engineering roles where system safety, reliability, and robust fault-tolerance are top priorities.
     </p>
   </section>
 
@@ -315,9 +311,17 @@
 
   <section id="projects">
     <div class="section-label">03 / Projects</div>
-    <h2>Projects</h2>
+    <h2>Personal Projects</h2>
     <div class="projects">
 
+      <div class="project-card">
+        <h3>STM32-DualSlot-IAP</h3>
+        <p>Lightweight, bare-metal firmware featuring an un-brickable A/B dual-slot layout for ARM Cortex-M0+ microcontrollers.</p>
+        <a class="project-link" href="https://github.com/auskawang/bootloader" target="_blank" rel="noopener">
+          ↗ View on GitHub
+        </a>
+      </div>
+      
       <div class="project-card">
         <img src="music_reactive_led_preview.png" alt="Music Reactive LED Strip"
              onerror="this.outerHTML='<div class=\'img-placeholder\'>Preview</div>'" />
@@ -360,10 +364,6 @@
 
     </div>
   </section>
-
-  <footer>
-    <p>© 2025 <span>Auska Wang</span>. All rights reserved.</p>
-  </footer>
 
 </body>
 </html>
