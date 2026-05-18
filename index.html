@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+
+      <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Auska Wang — Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #ffffff;
@@ -17,11 +18,11 @@
       --border: #ddd;
       --radius: 4px;
     }
-
+ 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
     body {
-      font-family: 'Space Mono', monospace;
+      font-family: 'Inter', sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.65;
@@ -29,7 +30,7 @@
       margin: 0 auto;
       padding: 40px 24px 80px;
     }
-
+ 
     /* ── HEADER ── */
     header {
       display: grid;
@@ -45,15 +46,15 @@
       overflow: hidden;
       animation: fadeUp 0.6s ease both;
     }
-
+ 
     header::before {
       display: none;
     }
-
+ 
     .avatar-wrap {
       position: relative;
     }
-
+ 
     .avatar-wrap::after {
       content: '';
       position: absolute;
@@ -62,7 +63,7 @@
       border: 2px solid var(--accent);
       opacity: 0.6;
     }
-
+ 
     header img {
       width: 110px;
       height: 110px;
@@ -71,34 +72,34 @@
       display: block;
       filter: grayscale(20%);
     }
-
+ 
     .header-text .eyebrow {
-      font-family: 'Space Mono', monospace;
+      font-family: 'Inter', sans-serif;
       font-size: 0.7rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--accent);
       margin-bottom: 8px;
     }
-
+ 
     .header-text h1 {
-      font-family: 'Syne', sans-serif;
-      font-weight: 800;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
       font-size: clamp(2rem, 5vw, 3.2rem);
       line-height: 1.1;
       color: #111;
       margin-bottom: 10px;
     }
-
+ 
     .header-text .subtitle {
       font-size: 0.8rem;
       color: var(--muted);
     }
-
+ 
     .header-text .subtitle span {
       color: var(--accent2);
     }
-
+ 
     /* ── SECTIONS ── */
     section {
       background: var(--surface);
@@ -108,44 +109,44 @@
       margin-bottom: 32px;
       animation: fadeUp 0.6s ease both;
     }
-
+ 
     section:nth-child(2) { animation-delay: 0.05s; }
     section:nth-child(3) { animation-delay: 0.1s; }
     section:nth-child(4) { animation-delay: 0.15s; }
-
+ 
     .section-label {
       display: flex;
       align-items: center;
       gap: 12px;
-      font-family: 'Space Mono', monospace;
+      font-family: 'Inter', sans-serif;
       font-size: 0.65rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--accent);
       margin-bottom: 20px;
     }
-
+ 
     .section-label::after {
       content: '';
       flex: 1;
       height: 1px;
       background: var(--border);
     }
-
+ 
     h2 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 1.6rem;
-      font-weight: 800;
+      font-weight: 700;
       color: #111;
       margin-bottom: 16px;
     }
-
+ 
     p {
       color: #444;
       font-size: 0.88rem;
       line-height: 1.8;
     }
-
+ 
     /* ── RESUME ── */
     .resume-btn {
       display: inline-flex;
@@ -154,7 +155,7 @@
       padding: 10px 22px;
       background: #111;
       color: #fff;
-      font-family: 'Space Mono', monospace;
+      font-family: 'Inter', sans-serif;
       font-size: 0.78rem;
       font-weight: 700;
       text-decoration: none;
@@ -163,28 +164,28 @@
       transition: background 0.2s, transform 0.2s;
       margin-bottom: 24px;
     }
-
+ 
     .resume-btn:hover {
       background: #333;
       transform: translateY(-1px);
     }
-
+ 
     .resume-btn svg { width: 14px; height: 14px; }
-
+ 
     .pdf-frame {
       width: 100%;
       height: 720px;
       border: 1px solid var(--border);
       border-radius: var(--radius);
     }
-
+ 
     /* ── PROJECTS ── */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
     }
-
+ 
     .project-card {
       background: var(--surface2);
       border: 1px solid var(--border);
@@ -195,27 +196,26 @@
       gap: 12px;
       transition: border-color 0.2s, transform 0.2s;
     }
-
+ 
     .project-card:hover {
-      border-color: var(--accent);
+      border-color: #999;
       transform: translateY(-3px);
     }
-
+ 
     .project-card img, .project-card video {
       width: 100%;
       aspect-ratio: 16/9;
       object-fit: cover;
       border-radius: 2px;
-      background: #222;
-      /* placeholder tint for missing images */
-      filter: brightness(0.85);
+      background: #eee;
+      filter: brightness(0.95);
     }
-
+ 
     .img-placeholder {
       width: 100%;
       aspect-ratio: 16/9;
       border-radius: 2px;
-      background: linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%);
+      background: linear-gradient(135deg, #ececec 0%, #e0e0e0 100%);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -224,34 +224,35 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
-
+ 
     .project-card h3 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 1rem;
-      font-weight: 700;
+      font-weight: 600;
       color: #000;
     }
-
+ 
     .project-card p {
       font-size: 0.8rem;
       flex: 1;
     }
-
+ 
     .project-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
       font-size: 0.75rem;
-      color: var(--accent2);
+      color: #333;
       text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s;
+      border-bottom: 1px solid #aaa;
+      transition: border-color 0.2s, color 0.2s;
     }
-
+ 
     .project-link:hover {
-      border-color: var(--accent2);
+      border-color: #111;
+      color: #111;
     }
-
+ 
     /* ── FOOTER ── */
     footer {
       text-align: center;
@@ -260,11 +261,12 @@
       letter-spacing: 0.08em;
       margin-top: 56px;
     }
-
+ 
     footer span {
-      color: var(--accent);
+      color: #111;
+      font-weight: 700;
     }
-
+ 
     /* ── ANIMATIONS ── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(18px); }
